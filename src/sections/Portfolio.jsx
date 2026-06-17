@@ -1,36 +1,94 @@
+import askImg from "../assets/lexstudy-ask.jpg";
+import aibeImg from "../assets/lexstudy-aibe.jpg";
+import lpForm from "../assets/lexpetition-form.jpg";
+import lpPreview from "../assets/lexpetition-preview.jpg";
+
 function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
-      <h2>Our Products</h2>
+
+      <h2>Products Built by LexAutomation</h2>
+
+      <p className="portfolio-intro">
+        Real legal technology solutions developed for law students,
+        citizens and legal professionals.
+      </p>
 
       <div className="portfolio-grid">
 
+        {/* LexStudy */}
         <div className="portfolio-card">
+
           <h3>LexStudy</h3>
+
+          <span className="badge">
+            📱 Live on Google Play
+          </span>
+
           <p>
-            Exam-oriented learning platform for Andhra University
-            LLB students with syllabus, questions, answers, 
-            previous papers, solved papers and AIBE exam preparation.
+            Android learning platform built for Andhra University LLB
+            students. Semester-wise syllabus, question banks,
+            solved papers and AIBE preparation.
           </p>
-          <button>View Project</button>
+
+          <p className="product-stats">
+            🎓 AU LLB Platform • 📚 1000+ Questions • ⚖️ AIBE Preparation
+          </p>
+
+          <div className="screenshots">
+            <img src={askImg} alt="LexStudy Ask Screen" />
+            <img src={aibeImg} alt="LexStudy AIBE Screen" />
+          </div>
+
+          <button
+            className="btn"
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.lexstudybase",
+                "_blank"
+              )
+            }
+          >
+            📱 View on Google Play
+          </button>
+
         </div>
 
+        {/* LexPetition */}
         <div className="portfolio-card">
+
           <h3>LexPetition</h3>
-          <p>
-            Legal document automation system that helps generate
-            petitions and legal drafts efficiently.
-          </p>
-          <button>View Project</button>
-        </div>
 
-        <div className="portfolio-card">
-          <h3>Legal Automation</h3>
+          <span className="badge">
+            📱 Live on Google Play
+          </span>
+
           <p>
-            Custom legal workflow automation and software solutions
-            for law firms and legal professionals.
+            Legal document automation platform for generating petitions,
+            legal notices and court drafts through guided forms.
           </p>
-          <button>View Project</button>
+
+          <p className="product-stats">
+            ⚖️ Draft Automation • 📝 Petitions • 📄 Legal Documents
+          </p>
+
+          <div className="screenshots">
+            <img src={lpForm} alt="LexPetition Form" />
+            <img src={lpPreview} alt="Generated Petition" />
+          </div>
+
+          <button
+            className="btn"
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.lexpetition",
+                "_blank"
+              )
+            }
+          >
+            📱 View on Google Play
+          </button>
+
         </div>
 
       </div>

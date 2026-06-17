@@ -7,7 +7,9 @@ import Portfolio from "./sections/Portfolio";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Stats from "./sections/Stats";
-import Testimonials from "./sections/Testimonials";
+import AboutMe from "./sections/AboutMe";
+import Videos from "./sections/Videos";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -17,10 +19,12 @@ function App() {
     <About />
     <Services />
     <Portfolio />
+    <AboutMe />
     <Stats />
-    <Testimonials />
+    <Videos />
     <Contact />
     <Footer />
+    <BackToTop />
   </>
   );
 }

@@ -7,16 +7,14 @@ body {
 section {
   padding: 80px 20px;
   text-align: center;
+  scroll-margin-top: 120px;
 }
 
-.hero {
-  background: #0f172a;
-  color: white;
-}
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 .hero h2 {
@@ -32,29 +30,19 @@ section {
   cursor: pointer;
 }
 
-footer {
-  background: #0f172a;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  color: white;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 20px 50px;
-
-  background: #0f172a;
+  
   color: white;
 
   position: sticky;
   top: 0;
+  z-index: 1000;
+  background: #061437;
 }
 
 .logo {
@@ -85,35 +73,14 @@ footer {
   text-align: center;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .nav-links a {
   color: white;
+  transition: 0.3s;
   text-decoration: none;
 }
 
 .nav-links a:hover {
   color: #38bdf8;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 300px;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
-  transition: 0.3s;
 }
 
 .card:hover {
@@ -156,10 +123,16 @@ html {
 
 .portfolio-card {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
-  width: 320px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-card img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .portfolio-card h3 {
@@ -174,4 +147,276 @@ html {
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.screenshots {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.screenshots img {
+  width: 220px;
+  height: auto;
+}
+
+.badge {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.project-screenshot {
+  max-width: 350px;
+  border-radius: 12px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+}
+.about-me {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-name {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.profile-tags span {
+  background: #eef4ff;
+  color: #1d4ed8;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.about-description {
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #475569;
+}
+
+.youtube-cta {
+margin-top: 40px;
+text-align: center;
+}
+
+.youtube-cta a {
+font-size: 1.2rem;
+font-weight: 600;
+color: #2563eb;
+text-decoration: none;
+}
+
+.youtube-cta a:hover {
+text-decoration: underline;
+}
+
+footer {
+background: #0f172a;
+color: white;
+text-align: center;
+padding: 50px 20px;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 25px;
+flex-wrap: wrap;
+margin: 20px 0;
+}
+
+.footer-links a {
+color: #38bdf8;
+text-decoration: none;
+font-weight: 600;
+}
+
+.footer-links a:hover {
+text-decoration: underline;
+}
+
+.copyright {
+margin-top: 20px;
+opacity: 0.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  align-items: center;
+}
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.portfolio-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 18px;
+}
+
+.product-stats {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .screenshots img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  nav {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
 }

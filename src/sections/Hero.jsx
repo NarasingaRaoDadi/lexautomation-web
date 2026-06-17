@@ -15,9 +15,20 @@ export default function Hero() {
             software solutions and digital transformation.
           </p>
 
-          <button className="btn">
-            Contact Us
-          </button>
+          <div className="hero-buttons">
+  <a href="#portfolio" className="btn">
+    View Products
+  </a>
+
+  <a
+    href="https://www.youtube.com/@LexAutomation"
+    target="_blank"
+    rel="noreferrer"
+    className="btn-secondary"
+  >
+    YouTube Channel
+  </a>
+</div>
         </div>
 
         <div className="hero-image">
