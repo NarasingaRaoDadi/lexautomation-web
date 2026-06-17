@@ -1,36 +1,41 @@
-export default function Portfolio() {
+function Portfolio() {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="portfolio">
       <h2>Our Products</h2>
 
-      <div className="card-container">
+      <div className="portfolio-grid">
 
-        <div className="card">
+        <div className="portfolio-card">
           <h3>LexStudy</h3>
-
           <p>
-            LLB exam preparation platform with syllabus, question banks, answers,
-            previous papers, solved papers and AIBE exam preparation resources.
+            Exam-oriented learning platform for Andhra University
+            LLB students with syllabus, questions, answers, 
+            previous papers, solved papers and AIBE exam preparation.
           </p>
-
-          <button className="btn">
-            Learn More
-          </button>
+          <button>View Project</button>
         </div>
 
-        <div className="card">
+        <div className="portfolio-card">
           <h3>LexPetition</h3>
-
           <p>
-            Smart legal drafting platform for petitions and legal documents.
+            Legal document automation system that helps generate
+            petitions and legal drafts efficiently.
           </p>
+          <button>View Project</button>
+        </div>
 
-          <button className="btn">
-            Learn More
-          </button>
+        <div className="portfolio-card">
+          <h3>Legal Automation</h3>
+          <p>
+            Custom legal workflow automation and software solutions
+            for law firms and legal professionals.
+          </p>
+          <button>View Project</button>
         </div>
 
       </div>
     </section>
   );
 }
+
+export default Portfolio;

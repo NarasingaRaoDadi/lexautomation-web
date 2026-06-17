@@ -137,3 +137,41 @@ html {
   max-width: 100%;
   height: auto;
 }
+
+.portfolio {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.portfolio h2 {
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.portfolio-card h3 {
+  margin-bottom: 15px;
+}
+
+.portfolio-card button {
+  margin-top: 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
