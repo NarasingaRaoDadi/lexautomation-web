@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Services from "./sections/Services";
@@ -10,13 +11,14 @@ import Footer from "./sections/Footer";
 function App() {
   return (
     <>
-      <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
+    <Navbar />
+    <Hero />
+    <About />
+    <Services />
+    <Portfolio />
+    <Contact />
+    <Footer />
+  </>
   );
 }
 
