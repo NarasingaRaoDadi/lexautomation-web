@@ -7,7 +7,7 @@ return ( <section id="contact"> <h2>Get In Touch</h2>
   </p>
 
   <p>
-    📧 Email: contact@lexautomation.in
+    📧 Email: lexautomation.contact@gmail.com
   </p>
 
   <p>
