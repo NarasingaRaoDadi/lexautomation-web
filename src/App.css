@@ -445,3 +445,11 @@ nav ul {
   border-radius: 6px;
   cursor: pointer;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
