@@ -2,8 +2,6 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f8fafc;
-
-  padding-top: 80px;
 }
 
 section {
@@ -35,18 +33,17 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px 50px;
+  
   color: white;
 
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-
-  z-index: 1000;
+  z-index: 10000;
   background: #061437;
-  box-sizing: border-box;
 }
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -433,7 +430,7 @@ html {
   padding: 20px 0;
   gap: 20px;
   text-align: center;
-  z-index: 10001;
+  z-index: 9999;
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
