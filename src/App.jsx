@@ -1,31 +1,55 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Services from "./sections/Services";
-import Portfolio from "./sections/Portfolio";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
-import Stats from "./sections/Stats";
-import AboutMe from "./sections/AboutMe";
-import Videos from "./sections/Videos";
-import BackToTop from "./components/BackToTop";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage";
+
+import SpaceLogin from "./pages/space/SpaceLogin";
+import SpaceDashboard from "./pages/space/SpaceDashboard";
+import SpaceChapter from "./pages/space/SpaceChapter";
+
+import ProtectedRoute from "./components/space/ProtectedRoute";
+import SpaceTopic from "./pages/space/SpaceTopic";
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <Hero />
-    <About />
-    <Services />
-    <Portfolio />
-    <AboutMe />
-    <Stats />
-    <Videos />
-    <Contact />
-    <Footer />
-    <BackToTop />
-  </>
+    <BrowserRouter>
+      <Routes>
+
+        {/* Main Website */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Private Space Portal */}
+        <Route path="/space" element={<SpaceLogin />} />
+
+        <Route
+          path="/space/dashboard"
+          element={
+            <ProtectedRoute>
+              <SpaceDashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/space/chapter/:id"
+          element={
+            <ProtectedRoute>
+              <SpaceChapter />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/space/chapter/:chapterId/topic/:topicId"
+          element={
+            <ProtectedRoute>
+              <SpaceTopic />
+            </ProtectedRoute>
+          }
+        />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
